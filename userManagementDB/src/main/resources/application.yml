@@ -1,0 +1,18 @@
+server:
+  port: 8083
+  servlet:    context-path: /springDataDemo
+
+spring:  application:    name: spring-data-demo
+    
+  datasource:
+    url: jdbc:mysql://localhost:3306/souravd?SSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  jpa:    hibernate:      ddl-auto: update 
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true       
